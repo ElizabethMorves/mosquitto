@@ -1,1 +1,1 @@
-docker build --no-cache -t Uzh0r/mosquitto .
+docker build --no-cache -t uzh0r/mosquitto .
