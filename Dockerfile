@@ -63,6 +63,7 @@ cd /build/mosquitto-auth-plug && cp config.mk.in config.mk && \
     sed -i "s/BACKEND_MONGO ?= no/BACKEND_MONGO ?= no/" config.mk && \
     sed -i "s/BACKEND_FILES ?= no/BACKEND_FILES ?= yes/" config.mk && \
     sed -i "s/BACKEND_MEMCACHED ?= no/BACKEND_MEMCACHED ?= no/" config.mk && \
+    sed -i "s/\/\/_log(LOG_DEBUG, \"SQL: %s\", query);/_log(LOG_DEBUG, \"SQL: %s\", query);/" be-mysql.c && \
 make -j "$(nproc)" && \
     install -s -m755 auth-plug.so /usr/local/lib/ && \
     install -s -m755 np /usr/local/bin/ && \
