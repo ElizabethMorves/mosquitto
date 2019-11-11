@@ -20,6 +20,6 @@ uzh0r/mosquitto
 
 add password
 <pre>
-docker exec -ti uzh0r/mosquitto np -p secretpass
+docker exec -ti mqtt np -p secretpass
 PBKDF2$sha256$901$iq/t4+BZIZBfg7pP$AhCUgOwaq6rFnXJITnka4s2hA9JybA9/
 </pre>
