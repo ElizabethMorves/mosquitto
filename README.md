@@ -17,3 +17,9 @@ docker run -dit --restart=always -d --name=mqtt --hostname=mqtt \
 -v /mosquitto/auth-plugin.conf:/etc/mosquitto.d/auth-plugin.conf:ro \
 uzh0r/mosquitto
 </pre>
+
+add password
+<pre>
+docker exec -ti uzh0r/mosquitto np -p secretpass
+PBKDF2$sha256$901$iq/t4+BZIZBfg7pP$AhCUgOwaq6rFnXJITnka4s2hA9JybA9/
+</pre>
