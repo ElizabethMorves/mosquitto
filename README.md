@@ -3,10 +3,6 @@
 <a href="https://github.com/warmcat/libwebsockets.git">LIBWEBSOCKETS</a> v2.4.2<br />
 
 <pre>
-docker pull elizabethmorves/mosquitto:latest
-</pre>
-
-<pre>
 docker build --no-cache -t elizabethmorves/mosquitto .
 </pre>
 
