@@ -7,7 +7,8 @@
 docker build --no-cache -t elizabethmorves/mosquitto .
 </pre>
 
-no ssl <pre>
+no ssl
+<pre>
 docker run -dit --restart=always -d --name=mqtt --hostname=mqtt \
 -p 1883:1883 \
 -v /mosquitto/mosquitto.conf:/etc/mosquitto/mosquitto.conf:ro \
@@ -15,7 +16,8 @@ docker run -dit --restart=always -d --name=mqtt --hostname=mqtt \
 elizabethmorves/mosquitto
 </pre>
 
-ssl <pre>
+ssl 
+<pre>
 docker run -dit --restart=always -d --name=mqtt --hostname=mqtt \
 -p 1883:1883 \
 -p 8883:8883 \
