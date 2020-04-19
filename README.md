@@ -35,7 +35,7 @@ docker run -d --restart=unless-stopped \
 elizabethmorves/mosquitto
 </pre>
 
-### add password to mysql
+### generate password for mysql
 <pre>
 docker exec -ti mqtt np -p secretpass
 PBKDF2$sha256$901$Jr9hFsQLG5P7nqGJ$zGPZniaC8bQu6VahzNl5RiNiafPXHMqU
